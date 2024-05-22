@@ -1,12 +1,12 @@
 extends templates/_layout
 block content
     //-section reglement
-    mj-section (padding='0')
+    mj-section(padding='0')
         mj-column
             mj-text(mj-class='d-admin') Si vous ne parvenez pas à lire cet e-mail, cliquez #[a(href='{{ mirror }}') ici]
     mj-section(padding='0')
         mj-column(width='600px')
-            mj-image(padding='0' href='https://ecosup-assurance.fr' src='https://img.mailinblue.com/3403292/images/content_library/original/6616fdc11fd9cb8730dd7225.jpg' target='_blank' alt='Affiche de la Journée Portes Ouvertes du samedi 13 avril 2024')/
+            mj-image(padding='0' href='https://ecosup-assurance.fr' src='https://img.mailinblue.com/3403292/images/content_library/original/6616fdc11fd9cb8730dd7225.jpg' target='_blank' alt='Affiche de la Journée Portes Ouvertes du samedi 25 mai 2024')/
     //- Section Titre
     mj-section(background-color='#ffffff' padding='0')
         mj-column(width='530px')
@@ -17,7 +17,7 @@ block content
         mj-column(width='530px')
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') #[strong {{ contact.PRENOM }}], les métiers de l'Assurance et de la Banque vous intéressent et vous souhaitez entreprendre une #[strong formation en alternance] ?
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') #[strong ECOSUP Assurance] vous ouvre ses portes ce 
-            mj-text(align='center' mj-class='d-date') Samedi 13 avril de 9h30 à 13h.
+            mj-text(align='center' mj-class='d-date') Samedi 25 mai de 9h30 à 13h.
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') Venez découvrir notre campus et rencontrer nos intervenants professionnels.
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') Des questions ? Alors rendez-vous ce samedi, toute notre équipe se tiendra à votre disposition pour présenter l'ensemble de nos formations.
     mj-section(background-color='#ffffff')
@@ -30,9 +30,9 @@ block content
                 mj-text(padding='0' mj-class='d-text') Responsable pédagogique
                 mj-text(padding='0' mj-class='d-text') Ecosup Assurance
     //- Comment s'y rendre
-    mj-section(background-color='#ffffff')
+    mj-section(background-color='#dfdfdf')
         mj-column(width='530px')
-            mj-text(font-size='18px' font-weight='700' color='#ba4995' mj-class='d-lieu') Comment s'y rendre ?
+            mj-text(font-size='18px' font-weight='700' color='#944694' mj-class='d-lieu' text-transform='uppercase') Comment s'y rendre ?
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#944694') Accès Métro :] Ligne 2 - station Tourcoing Centre.
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#944694') Accès Tramway :] Terminus Tourcoing Centre.
             mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#944694') Accès Bus : Gare] routière de Tourcoing.
@@ -57,8 +57,8 @@ block content
                 mj-social-element(background-color='#684092' name='linkedin' href='https://fr.linkedin.com/company/ecosup-campus')
     //- Reglement
     mj-section
-        mj-column(width='300px')
-            mj-text(padding='0 25px' mj-class='d-admin') Cet email a été envoyé à {{contact.EMAIL}}, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.
-            mj-text(padding='0 25px' mj-class='d-admin') [#a(href='{{ unsubscribe }}') Se désinscrire]
+        mj-column(width='250px')
+            mj-text(padding='0 30px' mj-class='d-admin') Cet email a été envoyé à {{contact.EMAIL}}, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.
+            mj-text(padding='0 30px' mj-class='d-admin') #[a(href='{{ unsubscribe }}') Se désinscrire]
             mj-spacer(height='20px')/
-            mj-text(padding='0 25px' mj-class='d-admin') ©2024 ECOSUP CAMPUS
+            mj-text(padding='0 30px' mj-class='d-admin') ©2024 ECOSUP CAMPUS
